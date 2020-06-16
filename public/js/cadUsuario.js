@@ -1,13 +1,14 @@
 $(function(){
 
 	$(document).ready(function() {
-		console.log('teste');
+		
 		$('#containner-menu').css('display', 'none');
+		$('.right-icone-menu').css('display', 'none');
 		
 	});
 
 	$(document).on('submit', '#frm-addUsuario', function(e) {
-		console.log('submit');
+		
 		e.preventDefault();
 
 		const dados = $('#frm-addUsuario').serialize();
@@ -49,9 +50,14 @@ $(function(){
 
 	 	});
 
-
+		// $("#logSistema").css('display', 'block');
 	});
 
+	$('.back-login').click(function (e){ 
+
+	 	window.location =  HTTP_HOST+'logoff';
+
+	 });
 
 
 });

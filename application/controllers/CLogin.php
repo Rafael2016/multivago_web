@@ -51,6 +51,7 @@ class CLogin extends CI_Controller {
 				if($flag){
 
 					$sessao = array(
+						'codUsuario' => $result->codUsuario,
 						'usuario'=> $result->nome,
 						'logado' => TRUE
 					);
@@ -70,6 +71,15 @@ class CLogin extends CI_Controller {
 
 		die(json_encode(array('sucess'=>FALSE,'message'=>'Error insperado ocorreu,contactar o Administrador', 'data'=>NULL, 'type'=>'error')));
 
+	}
+
+	/**
+	 * @method Logoff
+	 */
+	public function logoff(){
+
+		$this->session->sess_destroy();		
+		redirect(base_url().'login');
 	}
 
 

@@ -5,7 +5,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Cadastro de Usuário</h4>
+                        Cadastro de Participante
                     </div>
                     <div class="card-body">
                         <form id="frm-addUsuario">
@@ -25,12 +25,6 @@
                                 <label for="email">E-mail:</label>
                                 <input class="form-control" type="text" name="email" id="email" required>
                             </div>
-                            <div class="form-group text-center">
-                                <button type="button" class="btn btn-info back-login">
-                                    <i class="fas fa-house-user"></i>
-                                    Logar no Sistema
-                                </button>            
-                            </div>
                             <div class="input-group">
                                 <input type="submit" value="Adicionar(+)" class="btn btn-primary btn-block">
                             </div>
@@ -40,6 +34,5 @@
             </div>
         </div>
     </div>
-
 
 </body>

@@ -22,6 +22,10 @@ $HTTP_HOST = base_url();
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <link rel="stylesheet" href="<?=base_url()?>/public/css/<?=$css?>" media="all">
+    <!-- DataTable -->
+    <link rel="stylesheet" href="<?=base_url()?>/public/library/datatables/1.10/css/jquery.dataTables.min.css" media="all">
+    <link rel="stylesheet" href="<?=base_url()?>/public/library/datatables/1.10/css/jquery.dataTables.min.css" media="all">
 
     <script type="text/javascript">
     	const HTTP_HOST = "<?= $HTTP_HOST?>"

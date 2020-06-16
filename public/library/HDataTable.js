@@ -212,8 +212,8 @@ class HDataTable {
    	}
 
    	getButton() {
-   		var btnExcel = { extend: 'excel', text: '<img src="<?= base_url(); ?>public/midias/icon_excel.png" title="Gerar Excel" style="width:15px; height:15px;"></img>'};
-		var btnPdf = { extend: 'pdf', text: '<img src="<?= base_url(); ?>public/midias/icon-pdf.png" title="Gerar PDF" style="width:15px; height:15px;"></img>', orientation:'landscape'};
+   		var btnExcel = { extend: 'excel', text: '<i class="fas fa-file-excel"></i>'};
+		var btnPdf = { extend: 'pdf', text: '<i class="fas fa-file-pdf"></i>', orientation:'landscape'};
 		var btnCopy = { extend: 'copy', text: '<img src="<?= base_url(); ?>public/midias/icon_copy.png" title="Copiar tabela" style="width:15px; height:15px;"></img>'};
 		var buttons = [];
 
@@ -247,8 +247,14 @@ class HDataTable {
 
    	 		if(key == this.btnAction){
 
-		   	 	var btnAcoes  = '<i class="fas fa-window-close excluir" data-id="{0}" title="excluir">'.format(value, this.btnAction, value);
-		   	 		btnAcoes += '<i class="far fa-edit editar" data-id="{0}" title="Editar"></i>'.format(value, this.btnAction, value);
+		   	 	var btnAcoes  = `<button type="button" class="btn btn-danger btn-sm" id="btnExcluir" data-id="`+value+`">
+		   	 					 <i class="fas fa-trash-alt"></i>
+		   	 					 </button>
+		   	 					 <button type="button" class="btn btn btn-info btn-sm" id="btnEditar" data-id="`+value+`">
+		   	 					 <i class="fas fa-edit"></i>
+		   	 					 </button>	
+
+		   	 		`;
 
 		   	 	return 	btnAcoes;
 	   	 	}

@@ -6,7 +6,7 @@ class CCadUsuario extends CI_Controller
 	/**
 	 * @method Construtor
 	 */ 
-	function __construct()
+	public function __construct()
 	{
 		parent:: __construct();
 
@@ -31,11 +31,7 @@ class CCadUsuario extends CI_Controller
 		$this->load->library('form_validation');
 		$this->load->model('MUsuario', 'model');
 
-		try {
-			
-		} catch (Exception $e) {
-			
-		}
+		
 		if($this->input->post()){
 
 			$this->form_validation->set_rules('nome','nome','required');
