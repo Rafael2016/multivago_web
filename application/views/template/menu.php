@@ -11,8 +11,9 @@
           Cadastro <i class="fas fa-plus"></i>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?=base_url().'cadTrip'?>"><i class="fas fa-suitcase"></i> Viagem</a>
-          <a class="dropdown-item" href="<?=base_url().'cadParticipante'?>"><i class="fas fa-users"></i> Participante</a>
+          <a class="dropdown-item" href="<?=base_url().'trip'?>"><i class="fas fa-map-marked-alt"></i> Trip</a>
+          <a class="dropdown-item" href="<?=base_url().'viajador'?>"><i class="fas fa-hiking"></i> Viajador(a)</a>
+          <a class="dropdown-item" href="<?=base_url().'embarca'?>"><i class="fas fa-people-arrows"></i> Embarca Viajador</a>
           <a class="dropdown-item" href="<?=base_url().'CCadUsuario'?>"><i class="fas fa-user-plus"></i> Usuário</a>
         </div>
       </li>

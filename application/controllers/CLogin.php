@@ -53,6 +53,7 @@ class CLogin extends CI_Controller {
 					$sessao = array(
 						'codUsuario' => $result->codUsuario,
 						'usuario'=> $result->nome,
+						'login'=> $result->login,
 						'logado' => TRUE
 					);
 					

@@ -247,10 +247,10 @@ class HDataTable {
 
    	 		if(key == this.btnAction){
 
-		   	 	var btnAcoes  = `<button type="button" class="btn btn-danger btn-sm" id="btnExcluir" data-id="`+value+`">
+		   	 	var btnAcoes  = `<button type="button" class="btn btn-danger btn-sm btnExcluir"  data-id="`+value+`">
 		   	 					 <i class="fas fa-trash-alt"></i>
 		   	 					 </button>
-		   	 					 <button type="button" class="btn btn btn-info btn-sm" id="btnEditar" data-id="`+value+`">
+		   	 					 <button type="button" class="btn btn btn-info btn-sm btnEditar"  data-id="`+value+`">
 		   	 					 <i class="fas fa-edit"></i>
 		   	 					 </button>	
 

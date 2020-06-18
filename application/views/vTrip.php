@@ -5,11 +5,16 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header">
-                        Cadastro de Vigem(Trip)
+                       <i class="fas fa-map-marked-alt"></i> Adicionar Trip(Viagem)
                     </div>
                     <div class="card-body">
                         <form id="frm-addTrip">
-                            <div class="form-group">
+                            <input type="hidden" name="codTrip" id="codTrip">
+                             <div class="form-group">
+                                <label for="cidade">Descrição:</label>
+                                <input class="form-control" name="descricao" id="descricao" >
+                            </div>
+                            <div class="form-group" id="div_uf">
                                 <label for="uf">UF:</label>
                                 <select class="form-control" id="uf" name="uf">
                                     <option value="0">Escolher Estado</option>
@@ -31,8 +36,8 @@
                                 <input class="form-control" type="date" name="retorno" id="retorno" required>
                             </div>
                             <div class="form-group">
-                                <label for="numParcipante">Nº de Participante:</label>
-                                <input class="form-control" type="number" name="numParcipante" id="numParcipante" min="5" max="100">
+                                <label for="numParcipante">Nº Viajantes</label>
+                                <input class="form-control" type="number" name="viajantes" id="viajantes" min="5" max="100">
                             </div>
                             <span>
                                 <i class="fas fa-comments-dollar"></i>Custos
@@ -94,13 +99,14 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
+                                    <th>Descrição</th>
                                     <th>UF</th>
                                     <th>Cidade</th>
                                     <th>Saída</th>
                                     <th>Retorno</th>
-                                    <th>NºParticipante</th>
-                                    <th>($)Hospedagem</th>
-                                    <th>($)Lógistica</th>
+                                    <th>Viajantes</th>
+                                    <th><span class="fas fa-donate">Hospedagem</span></th>
+                                    <th><span class="fas fa-donate">Lógistica</span></th>
                                     <th>Moderador</th>
                                     <th>#</th>
                                 </tr>
