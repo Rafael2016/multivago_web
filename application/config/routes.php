@@ -32,3 +32,7 @@ $route['viajador/get']   	        = 'CViajador/get';
 $route['viajador/delete']   	    = 'CViajador/delete';  
 //EMBARCA
 $route['embarca']			      	= 'CEmbarca';
+$route['embarca/load']			    = 'CEmbarca/load';
+$route['embarca/add']			    = 'CEmbarca/add';
+$route['embarca/get']			    = 'CEmbarca/get';
+$route['embarca/delete']			= 'CEmbarca/delete';

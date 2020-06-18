@@ -56,10 +56,16 @@ class CViajador extends CI_Controller
 			$this->form_validation->set_rules('viajador','viajador','required');
 			$this->form_validation->set_rules('di','di','required');
 			$this->form_validation->set_rules('telefone','telefone','required');
+			$this->form_validation->set_rules('telefone','email','required');
 			
 			if($this->form_validation->run() === FALSE ){
 
 				response(array('success' =>FALSE ,'message'=>'Necessário informa nome,RG e telefone', 'data'=>NULL, 'type'=>'warning'));
+			}
+
+			if(!filter_var($this->input->post('email'), FILTER_VALIDATE_EMAIL)){
+
+				response(array('success' =>FALSE ,'message'=>'Necessário informa um e-mail válido', 'data'=>NULL, 'type'=>'warning'));
 			}
 
 			$data = array(
@@ -69,7 +75,7 @@ class CViajador extends CI_Controller
 				'di'           => $this->input->post('di'),
 				'telefone'     => $this->input->post('telefone'),
 				'email'        => $this->input->post('email'),
-				'userRegistro' => $this->session->userdata('codUsuario'),	
+				'codUsuario' => $this->session->userdata('codUsuario'),	
 				'dtRegistro'  =>  date('Y-m-d H:i:s')
 			);
 

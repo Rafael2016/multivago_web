@@ -13,8 +13,15 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="<?=base_url().'trip'?>"><i class="fas fa-map-marked-alt"></i> Trip</a>
           <a class="dropdown-item" href="<?=base_url().'viajador'?>"><i class="fas fa-hiking"></i> Viajador(a)</a>
-          <a class="dropdown-item" href="<?=base_url().'embarca'?>"><i class="fas fa-people-arrows"></i> Embarca Viajador</a>
           <a class="dropdown-item" href="<?=base_url().'CCadUsuario'?>"><i class="fas fa-user-plus"></i> Usuário</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Parametrização <i class="fas fa-users-cog"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="<?=base_url().'embarca'?>"><i class="fas fa-people-arrows"></i> Embarca Viajador</a>
         </div>
       </li>
       <li class="nav-item dropdown">

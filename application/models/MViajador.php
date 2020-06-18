@@ -15,7 +15,7 @@ class MViajador extends CI_Model
 		
 		if($this->session->userdata('login') != 'admin'){
 
-			$this->db->where('userRegistro',($this->session->userdata('codUsuario')));
+			$this->db->where('codUsuario',($this->session->userdata('codUsuario')));
 		}
 
 		return $this->db->get()->result();
@@ -29,11 +29,6 @@ class MViajador extends CI_Model
 		$this->db->select('codViajador,viajador,di,telefone,email');
 		$this->db->from('tbl_viajador');
 		$this->db->where('codViajador',$codViajador);
-
-		if($this->session->userdata('login') != 'admin'){
-
-			$this->db->where('userRegistro',($this->session->userdata('codUsuario')));
-		}
 
 		return $this->db->get()->result();
 		

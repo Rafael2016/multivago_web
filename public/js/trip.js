@@ -57,7 +57,7 @@ $(function(){
 
 				if(obJson.success == true && obJson.type == 'success'){
 
-					$('#frm-addTrip')[0].reset();
+					$('#frm-addTrip')[0].reset();	
 
 					alerta('success',obJson.message, function(){
 						window.location.reload();
